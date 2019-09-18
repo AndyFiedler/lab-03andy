@@ -7,7 +7,7 @@
 // Convert the contents to a javascript object
 // Alters some values in the object    
 // Maybe use faker    x
-// Save the new object back to the file
+// Save the new object back to the file        x?
 // What 2 steps are required to do this?
 // Re-Open and read the file contents
 // Prove that the new file contents match your changed object
@@ -24,7 +24,7 @@ it('push() Accepts a file name as a command line parameter', () => {
   });
 
   it('push()  Reads in the contents of the file specified', () => {
-    let myList = loadList();
+    let dataRead = loadList();
     expect( myList.length ).toEqual(3);
     myList.push();
     expect( myList.length ).toEqual(3);

@@ -20,16 +20,17 @@ process.argv.forEach(function (val, index, dataRead) {
 
   function printFile(file) {
     var reader = new FileReader();
-    reader.onload = function(evt) {
+    reader.onload = function(evt) {       //idk what its doin exactly so i should probably leave it out
       console.log(evt.target.result);
     };
     reader.readAsText(file);
     printFile();
   }
   ///////////////////////////////////////////////////////////////////////////
+
+  //tried a write file function
   const dataWrite = [];
 fs.writeFile(fileToWrite, (data) => {
-  // Do stuff with data!
   if (err) {
     console.error(err);
     // data will not be set if there is an error
